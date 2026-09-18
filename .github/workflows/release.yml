@@ -1,0 +1,61 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve version
+        id: version
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/v* ]]; then
+            VERSION="${GITHUB_REF_NAME#v}"
+          else
+            VERSION="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' QuickClip/Info.plist)"
+          fi
+          echo "version=${VERSION}" >> "${GITHUB_OUTPUT}"
+          echo "tag=v${VERSION}" >> "${GITHUB_OUTPUT}"
+
+      - name: Build Release
+        run: |
+          xcodebuild -project QuickClip.xcodeproj -scheme QuickClip -configuration Release \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGN_IDENTITY="-" CODE_SIGNING_ALLOWED=YES build
+
+      - name: Package
+        run: |
+          APP="build/DerivedData/Build/Products/Release/QuickClip.app"
+          test -d "${APP}"
+          ditto -c -k --keepParent "${APP}" "QuickClip-${{ steps.version.outputs.version }}.zip"
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="${{ steps.version.outputs.tag }}"
+          ZIP="QuickClip-${{ steps.version.outputs.version }}.zip"
+          TITLE="QuickClip ${{ steps.version.outputs.version }}"
+          NOTES="$(cat <<'EOF'
+          Ad-hoc signed macOS build (macOS 13+).
+
+          If Gatekeeper blocks the app, open it once with Control-click → Open.
+
+          The app lives in the menu bar. Edit Snippets and Settings appear in the Dock while those windows are open.
+          EOF
+          )"
+          if gh release view "${TAG}" >/dev/null 2>&1; then
+            gh release upload "${TAG}" "${ZIP}" --clobber
+          else
+            gh release create "${TAG}" "${ZIP}" --title "${TITLE}" --notes "${NOTES}"
+          fi

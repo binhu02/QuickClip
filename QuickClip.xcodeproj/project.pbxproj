@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* main.m */; };
+		A10000000000000000000002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* AppDelegate.m */; };
+		A10000000000000000000003 /* QCErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* QCErrors.m */; };
+		A10000000000000000000004 /* QCPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* QCPreferences.m */; };
+		A10000000000000000000005 /* QCStatusImages.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* QCStatusImages.m */; };
+		A10000000000000000000006 /* SnippetNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000B /* SnippetNode.m */; };
+		A10000000000000000000007 /* SnippetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000D /* SnippetManager.m */; };
+		A10000000000000000000008 /* AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000F /* AuthenticationManager.m */; };
+		A10000000000000000000009 /* SecureAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* SecureAuthenticationManager.m */; };
+		A1000000000000000000000A /* SecureSnippetStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000013 /* SecureSnippetStore.m */; };
+		A1000000000000000000000B /* ClipboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000015 /* ClipboardManager.m */; };
+		A1000000000000000000000C /* LoginItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* LoginItemManager.m */; };
+		A1000000000000000000000D /* SnippetEditorWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* SnippetEditorWindowController.m */; };
+		A1000000000000000000000E /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001B /* SettingsWindowController.m */; };
+		A1000000000000000000000F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001C /* Assets.xcassets */; };
+		A10000000000000000000010 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001D /* Cocoa.framework */; };
+		A10000000000000000000011 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001E /* LocalAuthentication.framework */; };
+		A10000000000000000000012 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001F /* Security.framework */; };
+		A10000000000000000000013 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10000000000000000000020 /* ServiceManagement.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B10000000000000000000002 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B10000000000000000000003 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B10000000000000000000004 /* QCErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCErrors.h; sourceTree = "<group>"; };
+		B10000000000000000000005 /* QCErrors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCErrors.m; sourceTree = "<group>"; };
+		B10000000000000000000006 /* QCPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCPreferences.h; sourceTree = "<group>"; };
+		B10000000000000000000007 /* QCPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCPreferences.m; sourceTree = "<group>"; };
+		B10000000000000000000008 /* QCStatusImages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCStatusImages.h; sourceTree = "<group>"; };
+		B10000000000000000000009 /* QCStatusImages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCStatusImages.m; sourceTree = "<group>"; };
+		B1000000000000000000000A /* SnippetNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnippetNode.h; sourceTree = "<group>"; };
+		B1000000000000000000000B /* SnippetNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnippetNode.m; sourceTree = "<group>"; };
+		B1000000000000000000000C /* SnippetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnippetManager.h; sourceTree = "<group>"; };
+		B1000000000000000000000D /* SnippetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnippetManager.m; sourceTree = "<group>"; };
+		B1000000000000000000000E /* AuthenticationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationManager.h; sourceTree = "<group>"; };
+		B1000000000000000000000F /* AuthenticationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationManager.m; sourceTree = "<group>"; };
+		B10000000000000000000010 /* SecureAuthenticationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureAuthenticationManager.h; sourceTree = "<group>"; };
+		B10000000000000000000011 /* SecureAuthenticationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureAuthenticationManager.m; sourceTree = "<group>"; };
+		B10000000000000000000012 /* SecureSnippetStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureSnippetStore.h; sourceTree = "<group>"; };
+		B10000000000000000000013 /* SecureSnippetStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureSnippetStore.m; sourceTree = "<group>"; };
+		B10000000000000000000014 /* ClipboardManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClipboardManager.h; sourceTree = "<group>"; };
+		B10000000000000000000015 /* ClipboardManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClipboardManager.m; sourceTree = "<group>"; };
+		B10000000000000000000016 /* LoginItemManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginItemManager.h; sourceTree = "<group>"; };
+		B10000000000000000000017 /* LoginItemManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginItemManager.m; sourceTree = "<group>"; };
+		B10000000000000000000018 /* SnippetEditorWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnippetEditorWindowController.h; sourceTree = "<group>"; };
+		B10000000000000000000019 /* SnippetEditorWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnippetEditorWindowController.m; sourceTree = "<group>"; };
+		B1000000000000000000001A /* SettingsWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
+		B1000000000000000000001B /* SettingsWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
+		B1000000000000000000001C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1000000000000000000001D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B1000000000000000000001E /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		B1000000000000000000001F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B10000000000000000000020 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		B10000000000000000000021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10000000000000000000022 /* QuickClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickClip.entitlements; sourceTree = "<group>"; };
+		C10000000000000000000001 /* QuickClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000010 /* Cocoa.framework in Frameworks */,
+				A10000000000000000000011 /* LocalAuthentication.framework in Frameworks */,
+				A10000000000000000000012 /* Security.framework in Frameworks */,
+				A10000000000000000000013 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				E10000000000000000000002 /* QuickClip */,
+				E10000000000000000000003 /* Frameworks */,
+				E10000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E10000000000000000000002 /* QuickClip */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* main.m */,
+				B10000000000000000000002 /* AppDelegate.h */,
+				B10000000000000000000003 /* AppDelegate.m */,
+				B10000000000000000000004 /* QCErrors.h */,
+				B10000000000000000000005 /* QCErrors.m */,
+				B10000000000000000000006 /* QCPreferences.h */,
+				B10000000000000000000007 /* QCPreferences.m */,
+				B10000000000000000000008 /* QCStatusImages.h */,
+				B10000000000000000000009 /* QCStatusImages.m */,
+				B1000000000000000000000A /* SnippetNode.h */,
+				B1000000000000000000000B /* SnippetNode.m */,
+				B1000000000000000000000C /* SnippetManager.h */,
+				B1000000000000000000000D /* SnippetManager.m */,
+				B1000000000000000000000E /* AuthenticationManager.h */,
+				B1000000000000000000000F /* AuthenticationManager.m */,
+				B10000000000000000000010 /* SecureAuthenticationManager.h */,
+				B10000000000000000000011 /* SecureAuthenticationManager.m */,
+				B10000000000000000000012 /* SecureSnippetStore.h */,
+				B10000000000000000000013 /* SecureSnippetStore.m */,
+				B10000000000000000000014 /* ClipboardManager.h */,
+				B10000000000000000000015 /* ClipboardManager.m */,
+				B10000000000000000000016 /* LoginItemManager.h */,
+				B10000000000000000000017 /* LoginItemManager.m */,
+				B10000000000000000000018 /* SnippetEditorWindowController.h */,
+				B10000000000000000000019 /* SnippetEditorWindowController.m */,
+				B1000000000000000000001A /* SettingsWindowController.h */,
+				B1000000000000000000001B /* SettingsWindowController.m */,
+				B1000000000000000000001C /* Assets.xcassets */,
+				B10000000000000000000021 /* Info.plist */,
+				B10000000000000000000022 /* QuickClip.entitlements */,
+			);
+			path = QuickClip;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000001D /* Cocoa.framework */,
+				B1000000000000000000001E /* LocalAuthentication.framework */,
+				B1000000000000000000001F /* Security.framework */,
+				B10000000000000000000020 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000001 /* QuickClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10000000000000000000001 /* QuickClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10000000000000000000004 /* Build configuration list for PBXNativeTarget "QuickClip" */;
+			buildPhases = (
+				F10000000000000000000002 /* Sources */,
+				D10000000000000000000001 /* Frameworks */,
+				F10000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickClip;
+			productName = QuickClip;
+			productReference = C10000000000000000000001 /* QuickClip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10000000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					F10000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = F10000000000000000000005 /* Build configuration list for PBXProject "QuickClip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E10000000000000000000001;
+			productRefGroup = E10000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F10000000000000000000001 /* QuickClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F10000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* main.m in Sources */,
+				A10000000000000000000002 /* AppDelegate.m in Sources */,
+				A10000000000000000000003 /* QCErrors.m in Sources */,
+				A10000000000000000000004 /* QCPreferences.m in Sources */,
+				A10000000000000000000005 /* QCStatusImages.m in Sources */,
+				A10000000000000000000006 /* SnippetNode.m in Sources */,
+				A10000000000000000000007 /* SnippetManager.m in Sources */,
+				A10000000000000000000008 /* AuthenticationManager.m in Sources */,
+				A10000000000000000000009 /* SecureAuthenticationManager.m in Sources */,
+				A1000000000000000000000A /* SecureSnippetStore.m in Sources */,
+				A1000000000000000000000B /* ClipboardManager.m in Sources */,
+				A1000000000000000000000C /* LoginItemManager.m in Sources */,
+				A1000000000000000000000D /* SnippetEditorWindowController.m in Sources */,
+				A1000000000000000000000E /* SettingsWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F10000000000000000000006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F10000000000000000000007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F10000000000000000000008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuickClip/QuickClip.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuickClip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quickclip.QuickClip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F10000000000000000000009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuickClip/QuickClip.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuickClip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quickclip.QuickClip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10000000000000000000004 /* Build configuration list for PBXNativeTarget "QuickClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000008 /* Debug */,
+				F10000000000000000000009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F10000000000000000000005 /* Build configuration list for PBXProject "QuickClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000006 /* Debug */,
+				F10000000000000000000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F10000000000000000000000 /* Project object */;
+}
