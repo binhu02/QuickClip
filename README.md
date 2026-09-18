@@ -1,10 +1,12 @@
 # QuickClip
 
-A macOS menu-bar app for copying text snippets. Version **0.1.0**. Requires macOS 13+.
+[![Build](https://github.com/binhu02/QuickClip/actions/workflows/release.yml/badge.svg)](https://github.com/binhu02/QuickClip/actions/workflows/release.yml)[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)![macOS 13+](https://img.shields.io/badge/macOS-13%2B-black)
+
+A macOS menu-bar app for copying text snippets.
 
 ## Install
 
-Download `QuickClip-0.1.0.zip` from [Releases](../../releases). Open the app. If macOS blocks it, Control-click → **Open**.
+Download the zip from [Releases](https://github.com/binhu02/QuickClip/releases). Open the app. If macOS blocks it, Control-click → **Open**.
 
 QuickClip lives in the **menu bar**, not the Dock. Look for a clipboard or lock icon.
 
@@ -28,3 +30,7 @@ Config file: `~/Library/Application Support/QuickClip/snippets.json`
 ## Docs
 
 - [Technical documentation](docs/technical.md) — architecture, security model, JSON schema, building, and releasing
+
+## Acknowledgement
+
+Grok 4.6.
